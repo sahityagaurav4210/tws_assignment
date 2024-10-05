@@ -4,7 +4,6 @@ RUN mkdir -p /usr/apps
 WORKDIR /usr/apps
 COPY package.json .
 COPY ./ .
-RUN npm install -g yarn
 RUN yarn install
 ENV NODE_ENV=production
 ENV PORT=12001
